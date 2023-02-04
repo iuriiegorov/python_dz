@@ -9,3 +9,19 @@
 6
 -> 5
 '''
+
+import random
+list = []
+n = int(input('Input a number: '))   
+for i in range(n):
+    m = random.randint(1,10)
+    list.append(m)
+print(list)
+x = int(input('Input a number: '))  
+y = x
+near = list[0]
+for i in list:
+    if abs(i - x) < y:
+        y = abs(i - x)
+        near = i
+print(near)
