@@ -10,6 +10,4 @@ print(xlist)
 ylist = []
 for i in range(len(xlist)):
     ylist.append(round(xlist[i]*100%100))
-print('Max: ', max(ylist))
-print('Min: ', min(ylist))
 print('Max - Min: ', max(ylist) - min(ylist))

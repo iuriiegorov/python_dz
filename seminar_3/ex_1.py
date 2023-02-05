@@ -3,13 +3,13 @@
 #Пример: [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
 import random
-randomlist = []
+rlst = []
 for i in range(random.randint(1,10)):
     n = random.randint(1,10)
-    randomlist.append(n)
-print(randomlist)
+    rlst.append(n)
+print(rlst)
 sum = 0
-for i in range(len(randomlist)):
+for i in range(len(rlst)):
     if i%2 != 0:
-        sum +=randomlist[i]
+        sum +=rlst[i]
 print(sum)

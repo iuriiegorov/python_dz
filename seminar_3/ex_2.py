@@ -5,15 +5,15 @@
 #- [2, 3, 5, 6] => [12, 15]
 
 import random
-randomlist = []
+rlst = []
 for i in range(random.randint(1,10)):
     n = random.randint(1,10)
-    randomlist.append(n)
-print(randomlist)
+    rlst.append(n)
+print(rlst)
 
-if (len(randomlist)%2 == 0):
-    for i in range(int(len(randomlist)/2)):
-        print(randomlist[i]*randomlist[len(randomlist) -i -1])
+if (len(rlst)%2 == 0):
+    for i in range(int(len(rlst)/2)):
+        print(rlst[i]*rlst[len(rlst) -i -1])
 else:
-     for i in range(int(len(randomlist)/2 + 1)):
-        print(randomlist[i]*randomlist[len(randomlist) -i -1])
+     for i in range(int(len(rlst)/2 + 1)):
+        print(rlst[i]*rlst[len(rlst) -i -1])
