@@ -10,11 +10,11 @@
 Вывод:
 Парам пам-пам'''
 
-a = 'пара-ра-рам рам-пам-папам па-ра-па-да'
-b = a.split()
-gl = [sum(j in 'уеыаоэяию' for j in i) for i in b]
-print(gl)
-if len(set(gl)) == 1 :
+fraza = 'пара-ра-рам рам-пам-папам па-ра-па-да'
+slova = fraza.split()
+glasn = [sum(j in 'уеыаоэяию' for j in i) for i in slova]
+print(glasn)
+if len(set(glasn)) == 1 :
     result = "Парам пам-пам"  
 else: result = "Пам парам"
 print(result)
